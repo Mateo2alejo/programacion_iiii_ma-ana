@@ -1,0 +1,69 @@
+<!DOCTYPE html>  
+<head>  
+    <title>Formulario de Preferencias de Estadísticas de Fútbol</title>
+</head>
+<body>
+    <h1>Reporte de Estadísticas de Fútbol  ⚽️</h1>
+
+    <p>Complete el formulario para recibir un análisis de su equipo o jugador favorito.</p>
+    
+    <form action="solicitar_reporte.php" method="post">
+        <table border="0">
+            <tr>
+                <th>
+                    <label for="nombre_cli">Nombre:</label>
+                    <input type="text" id="nombre_cli" name="nombre_cli" placeholder="Su nombre">
+                </th>
+                <th>
+                    <label for="correo_cli">Email:</label>
+                    <input type="email" id="correo_cli" name="correo_cli" placeholder="Su correo electrónico">
+                </th>
+            </tr>
+            
+            <tr>
+                <th>
+                    <label for="fecha_favorita"> Fecha de partido favorito</label>
+                    <input type="date" id="fecha_favorita" name="fecha_favorita">
+                </th>
+                <th>
+                    <label for="color_equipo"> Color principal de su equipo favorito</label>
+                    <input type="color" id="color_equipo" name="color_equipo">
+                </th>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="tipo_reporte"> Tipo de Reporte</label>
+                    <input type="radio" id="e" name="tipo_reporte" value="EQUIPO"> <label for="e">Equipo</label>
+                    <input type="radio" id="j" name="tipo_reporte" value="JUGADOR"> <label for="j">Jugador</label>
+                </td>
+                <td>
+                    <label for="Liga"> Liga de Interés</label>
+                    <select id="Liga" name="Liga">
+                        <option value=""> Seleccione...</option>
+                        <option value="Premier"> Premier League</option>
+                        <option value="LaLiga"> LaLiga (España)</option>
+                        <option value="SerieA"> Serie A (Italia)</option>
+                        <option value="Bundesliga"> Bundesliga</option>
+                        <option value="MLS"> MLS (EE. UU.)</option>
+                    </select> 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="comentarios_stats"> Jugador/Equipo Específico y Métricas</label>
+                    <textarea id="comentarios_stats" name="comentarios_stats" rows="5" placeholder="Ej: Goles por partido de Haaland vs otro equipo."></textarea>
+                </td>
+                <td>
+                    <input type="checkbox" id="acepto_noticias" name="acepto_noticias" value="si">
+                    <label for="acepto_noticias"> Acepto recibir noticias semanales de estadísticas</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Solicitar Análisis">
+        <input type="reset" value="Limpiar Formulario">
+    </form>
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 console.log("Variables en Javascript");
 
 saludo="Hola utilizando variables en Javascript";
@@ -20,8 +21,8 @@ nula=null;
 console.log("Variable nula",nula);
 console.log("Tipo de varibale",typeof(nula));
 
-bigentero=1010101010
-console.log("Variable bigentero",bigentero);
+bigentero=878787554564121215n;
+console.log("Variable BiInt",bigentero);
 console.log("Tipo de varibale",typeof(bigentero));
 
 persona = {nombre:"Juan", edad:30};

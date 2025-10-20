@@ -1,34 +1,44 @@
-console.log("Variables en Javascript");
 
-saludo="Hola utilizando variables en Javascript";
-console.log("Variable saludo",saludo);
-console.log("Tipo de varibale",typeof(saludo));
+console.log("OPERADORES ARITMETICOS");
 
-numero=123;
-console.log("Variable numero",numero);
-console.log("Tipo de varibale",typeof(numero));
+numero1 = 20;
+numero2 = 5;
 
-booleaneo=true;
-console.log("Variable booleaneo",booleaneo);
-console.log("Tipo de varibale",typeof(booleaneo));
+console.log("Suma");
+suma= numero1 + numero2;
+console.log("Resultado de la suma es:",suma);
 
-indefinida=undefined;
-console.log("Variable indefinida",indefinida);
-console.log("Tipo de varibale",typeof(indefinida));
+console.log("Resta");
+resta= numero1 - numero2;
+console.log("Resultado de la resta es:",resta);
 
-nula=null;
-console.log("Variable nula",nula);
-console.log("Tipo de varibale",typeof(nula));
+console.log("Multiplicacion");
+multiplicacion= numero1 * numero2;
+console.log("Resultado de la multiplicacion es:",multiplicacion);
 
-bigentero=1010101010
-console.log("Variable bigentero",bigentero);
-console.log("Tipo de varibale",typeof(bigentero));
+console.log("Division");
+division= numero1 / numero2;
+console.log("Resultado de la division es:",division);
 
-persona = {nombre:"Juan", edad:30};
+console.log("Modulo");
+modulo= numero1%numero2;
+console.log("Resultado:",modulo);
 
-console.log("Variable Objeto",persona);
-console.log("Tipo de varibale",typeof(persona));
+console.log("Potencia");
+potencia= numero1**numero2;
+console.log("Resultado:",potencia);
 
-numeros=[12,12,22,34,4,4];
-console.log("Variable Array",numeros);
-console.log("Tipo de varibale",typeof(numeros));
+console.log("Operadores Comparación");
+consele.log("Igualdad debil ==", "5"==5);
+console.log("Igualdad estricta ===", "5"===5);
+console.log("Desigualdad debil !=", "5"!=5);
+console.log("Desigualdad estricta !==", "5"!==5);
+console.log("Mayor que >", 5>3);
+console.log("Menor que <", 5<3);
+console.log("Mayor o igual que >=", 5>=5);
+console.log("Menor o igual que <=", 5<=5);
+
+console.log("Operadores Lógicos");
+console.log("y AND &&", "5"<=5 && "5">=5),
+console.log("o OR ||", "5"===5 || "6">=4);
+console.log("Negación NOT !", !("5"===5));

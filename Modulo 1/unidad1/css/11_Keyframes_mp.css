@@ -1,0 +1,49 @@
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+        background-color: #e74c3c; 
+    }
+    
+    50% {
+        transform: translateX(250px); 
+        background-color: #3498db; 
+    }
+    
+    100% {
+        transform: translateX(0);
+        background-color: #e74c3c;
+    }
+}
+
+.caja {
+    width: 150px;
+    height: 60px;
+    line-height: 60px; 
+    background-color: #e74c3c; 
+    
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 8px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-x: hidden; 
+}
+h1 {
+    color: #333;
+    text-align: center;
+}

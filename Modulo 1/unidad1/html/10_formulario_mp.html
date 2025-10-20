@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Generador de Estadísticas de Fútbol</title>
+</head>
+<body>
+    <h1>Solicitud de Análisis de Estadísticas de Fútbol ⚽️</h1>
+
+    <p>Utilice este formulario para solicitar estadísticas detalladas sobre un equipo o jugador.</p>
+
+    <form action="generar_stats.php" method="post">
+        
+        <label for="entidad"> Equipo o Jugador:</label>
+        <input type="text" id="entidad" name="entidad" placeholder="Ej: Real Madrid o  Messi">
+        <br><br>
+
+        <label for="tipo_stat"> Tipo de Estadística:</label>
+        <select id="tipo_stat" name="tipo_stat">
+            <option value="goles">Goles y Asistencias</option>
+            <option value="pases">Pases y Precisión</option>
+            <option value="defensa">Defensa (Robos, Intercepciones)</option>
+        </select>
+        <br><br>
+        
+        <label for="temporada"> Temporada/Año(s):</label>
+        <input type="text" id="temporada" name="temporada" placeholder="Ej: 2023-2024 o Últimos 5 años">
+        <br><br>
+
+        <label for="comentarios"> Comentarios Adicionales: </label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Especifique cualquier  rival o "></textarea>
+        <br><br>
+
+        <input type="submit" value="Generar Reporte">
+        <input type="reset" value="Borrar Campos">
+    </form>
+</body>
+</html>

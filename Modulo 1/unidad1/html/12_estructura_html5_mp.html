@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis y Estadísticas de Fútbol — HTML5 Layout</title>
+</head>
+<body>
+    <header>
+        <h1>Análisis y Estadísticas Avanzadas de Fútbol</h1>
+        <p>Diseño estructural para reportes deportivos clave</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio_stats">Inicio</a></li>
+            <li><a href="#jugadores">Top Jugadores</a></li>
+            <li><a href="#equipos">Rendimiento por Equipos</a></li>
+            <li><a href="#contacto_analista">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <main id="inicio_stats">
+        
+        <section id="jugadores">
+            <h2>Diseño tipo Flexbox: Jugador Destacado</h2>
+            <p>
+                Este bloque muestra el perfil de un jugador clave junto a su análisis comparativo.
+            </p>
+
+            <article>
+                <h3>Perfil y Estadísticas de Goleo</h3>
+                <p>
+                    Aquí se presenta el contenido principal: **Goles, Asistencias, Minutos jugados y Rating**. 
+                    Con CSS Flexbox, este artículo ocupará el espacio principal de la sección.
+                </p>
+                <p>Ejemplo: Kylian Mbappé - Goles (30), Asistencias (15), Minutos (3200).</p>
+            </article>
+
+            <aside>
+                <h3>Comparativa Lateral (Aside)</h3>
+                <p>
+                    Contenido secundario: **Comparativa de Rendimiento** con el promedio de la liga o con el segundo mejor jugador en la misma posición. En dispositivos móviles, se ubicará debajo del perfil principal.
+                </p>
+            </aside>
+            <p><a href="#equipos">Ir a Rendimiento por Equipos ↓</a></p>
+        </section>
+
+
+        <hr>
+
+
+        <section id="equipos">
+            <h2>Diseño tipo Grid: Reporte de Equipos</h2>
+            <p>
+                Este ejemplo simula un contenedor dividido en áreas de cuadrícula para una visualización compleja de la liga.
+            </p>
+
+            <div class="grid-container">
+                <header>
+                    <h3>Tabla de Posiciones del Grid (Área Superior)</h3>
+                </header>
+
+                <nav>
+                    <ul>
+                        <li><a href="#top_goles">Top Goles</a></li>
+                        <li><a href="#top_defensa">Top Defensa</a></li>
+                        <li><a href="#sanciones">Sanciones</a></li>
+                    </ul>
+                </nav>
+
+                <main>
+                    <h3>Análisis Detallado (Contenido Principal del Grid)</h3>
+                    <p>
+                        Esta área muestra estadísticas complejas: **xG (Goles Esperados), xA (Asistencias Esperadas)** y posesión del balón.
+                        Con CSS Grid, esta sección podría extenderse verticalmente u ocupar la columna central.
+                    </p>
+                </main>
+
+                <aside>
+                    <h3>Noticias y Tendencias (Aside del Grid)</h3>
+                    <p>Zona lateral con los **datos de lesiones** o noticias de transferencias recientes.</p>
+                </aside>
+
+                <footer>
+                    <p>Fuente de Datos: DataFootball Labs © 2025</p>
+                </footer>
+            </div>
+
+            <p><a href="#inicio_stats">↑ Volver al inicio</a></p>
+        </section>
+    </main>
+
+
+    <footer id="contacto_analista">
+        <p>Contacto del Analista: <a href="mailto:analista@datafutbol.com">analista@datafutbol.com</a></p>
+    </footer>
+
+</body>
+</html>

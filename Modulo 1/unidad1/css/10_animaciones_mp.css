@@ -1,0 +1,31 @@
+.boton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; 
+    margin: 30px; 
+    border-radius: 12px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out; 
+}
+
+.boton:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4); 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding-top: 50px;
+}

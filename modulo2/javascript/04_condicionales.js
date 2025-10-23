@@ -66,3 +66,4 @@ if (n1 >= n2 && n1 >= n3) {
 } else {
     console.log("El número mayor es:", n3);
 }
+

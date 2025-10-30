@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <script src="03_cambio_estilos.js" defer></script>
+const mensaje= document.getElementById('mensaje');
+mensaje.textContent= "Mansaje Actualizado"
+mensaje.style.color= "red"
 
-    <style>
-        .boton{
-            padding: 10px;
-            background-color: blue;
-            color: white;
-        
-        }
-        </style>
 
-</head>
-<body>
-    <h1 id= "mensaje"> TEXTO ORIGINAL </h1>
-    <a id ="link" href="#"> Link</a>
-
-</body>
-</html>
+const link = document.getElementById('link');
+link.setAttribute('href', 'https://www.google.com');
+link.classList.add('boton');

@@ -1,10 +1,10 @@
-const caja=document.getElementById('caja');
-caja.addEventListener('mouseover',()=>{
-    caja.style.background = 'yellow';
-});
-caja.addEventListener('mouseout',()=>{
-    caja.style.background = 'gray';
-});
-caja.addEventListener('click',()=>{
-    alert('click en la caja');
+constboton=document.getElementById('agregar')
+boton.addEventListener('click',()=>{
+    const texto=document.getElementById('tarea').value;
+    if(texto.trim()!==''){
+        const li= document.createElement('li');
+        li.textContent=texto;
+        document.getElementById('listaTareas').appendChild(li);
+        document.getElementById('tarea').value='';
+    }
 });

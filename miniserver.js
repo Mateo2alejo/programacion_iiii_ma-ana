@@ -1,3 +1,4 @@
+
 // server.mjs
 import { createServer } from 'node:http';
 import { createReadStream, existsSync, statSync } from 'node:fs';
@@ -7,7 +8,7 @@ import { cwd } from 'node:process';
 
 // __dirname equivalente para ESM
 const __filename = fileURLToPath(import.meta.url);
-const _dirname = join(_filename, '..');
+const __dirname = join(__filename, '..');
 
 // Servir archivos desde la carpeta donde está este archivo
 const baseDir = __dirname;
@@ -48,5 +49,5 @@ const server = createServer((req, res) => {
 });
 
 server.listen(3000, '127.0.0.1', () => {
-  console.log(Server running at http://127.0.0.1:3000/);
+  console.log(`Server running at http://127.0.0.1:3000/`);
 });

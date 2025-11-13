@@ -1,17 +1,28 @@
-var usuario1 = {
-    id: 12,
-    nombre: 'Jose Garcia Marquez'
-};
-var usuario2 = {
-    id: 13,
-    nombre: 'Pablo Escobar',
-    correo: 'pablo@escobar.com'
-};
-console.log(usuario1);
-console.log(usuario1.id);
-console.log(usuario1.nombre);
-console.log(usuario1.correo);
-console.log(usuario2);
-console.log(usuario2.id);
-console.log(usuario2.nombre);
-console.log(usuario2.correo);
+// funcion basica
+function saludar(nombre: string): string {
+    return `Hola ${nombre}`;
+}
+
+console.log(saludar('Francisco'));
+// funcion flecha
+const sumar = (a: number, b: number): number => {
+    return a + b;
+}
+console.log(sumar(5,5));
+
+
+function saludarDeNuevo(): void {
+    console.log(`Hola`);
+    console.log(`Bienvenido a Typescript`);
+}
+saludarDeNuevo();
+
+
+function calcularAreaCirculo(radio: number): number{
+    return Math.PI * radio * radio;
+}
+function calcularAreaCirculoVoid(radio: number): void{
+    console.log(Math.PI * radio * radio);
+}
+console.log(calcularAreaCirculo(5));
+calcularAreaCirculoVoid(7);

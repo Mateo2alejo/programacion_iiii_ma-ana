@@ -1,19 +1,19 @@
-import { createParamDecorator, Injectable } from '@nestjs/common';
+import { Controller, Injectable } from '@nestjs/common';
 
 @Injectable()
 export class BasicsService {
 
-    getMyFisrtGet(): object {
-        return{
-            service:'Blog-Backend',
+    getMyFirstGet(): object {
+        return {
+            service: 'Blog-Backend',
             controller: '/basics',
             function: 'Get Example'
         };
     }
 
     getConParametros(parametro: string): object {
-        return{
-            service:'Blog-Backend',
+        return {
+            service: 'Blog-Backend',
             controller: '/basics',
             function: 'Get con Parametros',
             parametroRecibido: parametro
@@ -24,52 +24,49 @@ export class BasicsService {
         return {
             service: 'Blog-Backend',
             controller: '/basics tipo post',
-            function: 'Ejemplo de peticion Post',
-            bodyRecibido: bodyPost
-        };
+            function: 'Ejemplo de Peticion Post',
+            body: bodyPost
+        };            
     }
 
     putFunction(bodyPost: object, parametro: string): object {
         return {
             service: 'Blog-Backend',
             controller: '/basics tipo put',
-            function: 'Ejemplo de peticion Put',
-            bodyRecibido: bodyPost,
+            function: 'Ejemplo de Peticion Put',
+            body: bodyPost,
             parametro: parametro
-        };
+        };            
     }
 
     deleteFunction(parametro: string): object {
         return {
             service: 'Blog-Backend',
             controller: '/basics tipo delete',
-            function: 'Ejemplo de peticion Delete',
+            function: 'Ejemplo de Peticion Delete',
             parametro: parametro
-        };
+        };            
     }
 
-    calculoTriangulo(body: any): object {
-        const result: number = (body.base*body.altura)/2
-
+      calculoTriangulo(body: any): object {
+        const result: number = (body.base * body.altura) / 2;
         return {
-            service: 'Blog-Backend',
-            controller: '/basics tipo delete',
-            function: 'Calculo del area de un triangulo',
-            parametro: body,
-            resultado: result
+        service: 'Blog-Backend',
+        controller: '/basics tipo delete',
+        function: 'Ejemplo de peticion Delete',
+        parametro: body,
+        resultado: result,
         };
     }
-
     areaRectangulo(ancho: number, alto: number): object {
         const result: number = ancho * alto;
         return {
-            service: 'Blog-Backend',
-            controller: '/basics tipo delete',
-            function: 'Calculo del area de un rectangulo',
-            ancho: ancho,
-            alto: alto,
-            resultado: result
+        service: 'Blog-Backend',
+        controller: '/basics tipo delete',
+        function: 'calculo-area-rectangulo/:ancho/:alto',
+        ancho: ancho,
+        alto: alto,
+        resultado: result,
         };
     }
-
 }

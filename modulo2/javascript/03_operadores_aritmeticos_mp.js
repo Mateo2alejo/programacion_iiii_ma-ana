@@ -1,46 +1,30 @@
-console.log("--- 📊 CÁLCULOS ARITMÉTICOS DE MÉTRICAS 📊 ---");
-let tirosTotales = 20; 
-let tirosPuerta = 12;  
+console.log("Archivo 03_operadores_aritmeticos.js cargado correctamente");
+let a = 10;
+let b = 4;
 
+console.log("Valor de a:", a);
+console.log("Valor de b:", b);
+let suma = a + b;
+let resta = a - b;
+let multiplicacion = a * b;
+let division = a / b;
+let modulo = a % b;
 
-let tirosFuera = tirosTotales - tirosPuerta;
-let comprobacionSuma = tirosPuerta + tirosFuera;
-console.log("Suma (Tiros a Puerta + Tiros Fuera):", comprobacionSuma);
+console.log("Suma (a + b):", suma);
+console.log("Resta (a - b):", resta);
+console.log("Multiplicación (a * b):", multiplicacion);
+console.log("División (a / b):", division);
+console.log("Módulo (a % b):", modulo);
+a += 5; 
+console.log("Nuevo valor de a (a += 5):", a);
 
-console.log("Resta (Tiros Totales - Tiros a Puerta):", tirosTotales - tirosPuerta);
+b *= 2; 
+console.log("Nuevo valor de b (b *= 2):", b);
+let x = 7;
+console.log("Valor original de x:", x);
 
-let golesAnotados = 3;
-let valorPuntos = 5;
-let valorGoles = golesAnotados * valorPuntos;
-console.log("Multiplicación (Valor en Puntos de los Goles):", valorGoles);
+x++;
+console.log("x después de x++:", x);
 
-
-let porcentajeTirosPuerta = (tirosPuerta / tirosTotales) * 100;
-console.log("División (Porcentaje de Tiros a Puerta):", porcentajeTirosPuerta.toFixed(2) + "%");
-
-let pasesClave = 13;
-let esMultiploDeCinco = pasesClave % 5;
-console.log("Módulo (Pases Clave % 5 - Resultado 0 activa un análisis):", esMultiploDeCinco);
-
-let indiceBase = 2; 
-let partidosGanados = 5;
-let indiceRendimiento = indiceBase ** 3; 
-console.log("Potencia (Índice de Rendimiento 2**3):", indiceRendimiento);
-
-console.log("\n--- ⚖️ OPERADORES DE COMPARACIÓN ⚖️ ---");
-
-let xg = 2.5; 
-let golesReales = "3"; 
-console.log("Igualdad Débil (xG == GolesReales, 2.5 == '3'):", xg == golesReales);
-console.log("Igualdad Estricta (xG === GolesReales, 2.5 === '3'):", xg === golesReales);
-console.log("Mayor que (>): ¿xG > 3.0?:", xg > 3.0);
-console.log("Menor o Igual que (<=): Goles reales <= 2.5?:", parseInt(golesReales) <= xg);
-console.log("\n--- 🧠 OPERADORES LÓGICOS 🧠 ---");
-
-let posesionAlta = true;
-let xgAlto = true;
-let pasesCompletadosBajos = false;
-
-console.log("Y AND &&: PosesionAlta && xgAlto:", posesionAlta && xgAlto);
-console.log("O OR ||: PasesCompletadosBajos || xgAlto:", pasesCompletadosBajos || xgAlto);
-console.log("Negación NOT !:", !posesionAlta);
+x--;
+console.log("x después de x--:", x);

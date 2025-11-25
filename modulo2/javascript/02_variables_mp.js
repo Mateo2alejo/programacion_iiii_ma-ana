@@ -1,35 +1,20 @@
-console.log("--- Tipos de Variables en el Dashboard de Estadísticas ---");
+console.log("Archivo 02_variables.js cargado correctamente");
+let nombre = "Carlos";
+const edad = 25;
+var ciudad = "Quito";
 
-let nombreEquipo = "FC Data Analysts";
-console.log("Variable nombreEquipo:", nombreEquipo);
-console.log("Tipo de variable:", typeof(nombreEquipo));
-let golesEsperados = 2.45;
-console.log("Variable golesEsperados (xG):", golesEsperados);
-console.log("Tipo de variable:", typeof(golesEsperados));
+console.log("Nombre:", nombre);
+console.log("Edad:", edad);
+console.log("Ciudad:", ciudad);
+nombre = "María";
+ciudad = "Guayaquil";
 
-let esRendimientoAlto = true;
-console.log("Variable esRendimientoAlto:", esRendimientoAlto);
-console.log("Tipo de variable:", typeof(esRendimientoAlto));
+console.log("Nuevo nombre:", nombre);
+console.log("Nueva ciudad:", ciudad);
+let a = 10;
+let b = 5;
+let suma = a + b;
 
-let tiempoJugado; 
-console.log("Variable tiempoJugado (minutos):", tiempoJugado);
-console.log("Tipo de variable:", typeof(tiempoJugado));
-
-let analisisArbitral = null; 
-console.log("Variable analisisArbitral:", analisisArbitral);
-console.log("Tipo de variable:", typeof(analisisArbitral)); 
-let totalPasesTemporada = 878787554564121215n;
-console.log("Variable totalPasesTemporada:", totalPasesTemporada);
-console.log("Tipo de variable:", typeof(totalPasesTemporada));
-
-let jugadorClave = {
-    nombre: "Lionel Data", 
-    posicion: "Delantero",
-    duelosGanados: 85
-};
-console.log("Variable Objeto (jugadorClave):", jugadorClave);
-console.log("Tipo de variable:", typeof(jugadorClave));
-
-let historialGoles = [2, 1, 0, 3, 4, 1]; 
-console.log("Variable Array (historialGoles):", historialGoles);
-console.log("Tipo de variable:", typeof(historialGoles)); 
+console.log("La suma de", a, "+", b, "es:", suma);
+let activo = true;
+console.log("¿Activo?:", activo);

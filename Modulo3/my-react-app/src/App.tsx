@@ -51,45 +51,17 @@
 
 
 
-import FetchUser from "./useEffect/FetchUser";
-import LogEffect from "./useEffect/LogEffect";
-import ScrollLogger from "./useEffect/ScrollLoger";
-import CirculoColorido from "./useRef/CirculoColorido";
-import ScrollDemo from "./useRef/ScrollDemo";
-import AccessWithLimit from "./useState/AccesWithLimit";
-import CheckboxSummary from "./useState/CheckboxSummary";
-import ClickHistory from "./useState/ClickHistory";
-import DocumentTitleChanger from "./useState/DocumentTitleChanger";
-import DynamicColor from "./useState/DynamicColor";
-import Hoverfont from "./useState/Hoverfont";
-import LanguageSwitcher from "./useState/LanguageSwitcher";
-import LoginWithLimit from "./useState/LoginWithLimit";
-import MultiSwitch from "./useState/MultiSwitch";
-import PostLikes from "./useState/PostLikes";
-import ReproductorSonido from "./useRef/ReproductorSonido";
-import MoverCaja from "./useRef/MoverCaja";
+import FormularioReducer from "./useReducer/FormularioReducer";
+
+
 
 function App () {
   return (
     <>
 
-    <HoverFont />
-    <AccessWithLimit />
-    <LoginWithLimit />
-    <DocumentTitleChanger />
-    <PostLikes />
-    <CheckboxSummary />
-    <LanguageSwitcher />
-    <MultiSwitch />
-    <DynamicColor />
-    <ClickHistory />
-    <LogEffect />
-    <FetchUser />
-    <ScrollLogger />
-    <CirculoColorido />
-    <ScrollDemo />
-    <ReproductorSonido/>
-    <MoverCaja />
+    
+
+    <FormularioReducer />
     
     </>
   )

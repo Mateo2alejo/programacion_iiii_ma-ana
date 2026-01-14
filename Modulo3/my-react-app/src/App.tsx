@@ -48,10 +48,7 @@
 //
 //export default App;
 
-
-
-
-import FormularioReducer from "./useReducer/FormularioReducer";
+import FormularioZod from "./formularios/FormularioZond";
 
 
 
@@ -61,8 +58,9 @@ function App () {
 
     
 
-    <FormularioReducer />
-    
+    <FormularioZod />
+
+
     </>
   )
 }

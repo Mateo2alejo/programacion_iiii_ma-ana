@@ -16,7 +16,7 @@ export function PostDetail(): JSX.Element {
   const [post, setPost] = useState<Post | null>(null);
 
   useEffect((): void => {
-    axios.get(`https://nestjs-blog-backend-api.desarrollo-software.xyz/posts/${id}`)
+    axios.get(`https://localhost:3000/posts/${id}`)
       .then(res => setPost(res.data.data))
       .catch(() => navigate("/"));
   }, [id]);

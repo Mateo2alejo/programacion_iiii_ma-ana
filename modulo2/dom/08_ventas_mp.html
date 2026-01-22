@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Casas</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    form input {
+      margin: 5px;
+      padding: 8px;
+    }
+
+    #contenedorCasas div {
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    button.eliminar {
+      background: red;
+      color: white;
+      border: none;
+      padding: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Gestor de Casas</h1>
+
+  <form id="formulario">
+    <input type="text" id="direccion" placeholder="Dirección" required>
+    <input type="text" id="descripcion" placeholder="Descripción" required>
+    <input type="number" id="precio" placeholder="Precio" required>
+    <button type="submit">Agregar Casa</button>
+  </form>
+
+  <section id="contenedorCasas"></section>
+
+  <script src="08_ventas_mp.js"></script>
+</body>
+</html>

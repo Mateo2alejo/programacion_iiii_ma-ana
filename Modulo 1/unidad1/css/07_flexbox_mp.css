@@ -1,0 +1,36 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 3px solid #0056b3; 
+    padding: 15px;
+    gap: 15px;
+    background-color: #e9ecef; 
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; 
+}
+
+.item {
+    background-color: #2ecc71;
+    padding: 20px;
+    border: 2px solid #1a7d4a; 
+    flex: 1 1 100px; 
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item_especial {
+    align-self: flex-start;
+    background-color: #e74c3c; 
+    padding: 20px;
+    border: 2px solid #993333;
+    flex: 1 1 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+}
